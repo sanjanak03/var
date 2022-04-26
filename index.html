@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Add Qyuestions </h1>
+    <button id="myBtn">Add Question</button>
+ <div id="myModal" class="modal">
+        <div class="boxx">
+            <button class="w1-button">Test_name</button>
+            <button class="w2-button">exam</button>
+            <button class="w3-button">Test_type</button>
+            <button class="w4-button">Test_type</button>
+            <button class="w5-button">Duration</button>
+            <button class="w7-button">Test end date</button><br><br>
+            <button class="w8-button">Next</button>
+            <button class="close">Close</button>
+        </div>
+     </div>
+
+      <script>
+          // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+      </script>
+    
+</body>
+
+</html>
